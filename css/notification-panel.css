@@ -1,0 +1,366 @@
+.notification-panel-container {
+    position: absolute;
+    width: var(--phone-screen-width);
+    height: var(--phone-screen-height);
+    background: none;
+    transition: all 1s ease;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 16;
+    box-shadow: none;
+}
+.blur {
+    backdrop-filter: blur(10px);
+}
+.notification-panel-toggle-button {
+    display: inline-block;
+    background-color: transparent;
+    height: 2.5px;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    cursor: pointer;
+    z-index: 50;
+}
+.notification-panel-toggle-button:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.notification-panel-toggle-button:active {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.notification-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateY(-110%);
+    transition: all 0.5s ease;
+    background: linear-gradient(to bottom, rgba(0, 0, 0),55%, rgba(255, 255, 255, 0));
+    box-shadow: none;
+}
+
+.notification-panel-signal-battery{
+    position: relative;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    height: auto;
+    width: 100%;
+}
+
+.notification-panel-signal-battery > .signal-battery{
+    margin-top: 4px;
+    margin-right: 14px;
+    width: 45%;
+    height: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.notification-panel-time-date-sim-filter-settings{
+    position: relative;
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 10px 4px 5px;
+}
+
+.notif-time {
+    font-family: 'myFont';
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    padding: 0 4px 0 10px;
+    font-size: 1.15em;
+    color: white;
+}
+.notif-date-sim{
+    height: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.notif-date{
+    font-family: sans-serif;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    font-size: 0.5em;
+    color: white;
+}
+.notif-sim{
+    font-family: sans-serif;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    font-size: 0.5em;
+    color: white;
+}
+.filter-notif-settings{
+    position: absolute;
+    right: 10px;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+}
+
+.filter-notif-settings img{
+    width: auto;
+    height: 13.5px;
+    margin-left: 18px;
+    
+}
+.filter-notif-settings img:first-child{
+    display: none;
+}
+
+.quick-settings{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 88px;
+    width: calc(var(--phone-screen-width) - 5px);
+    border-radius: 7px;
+    transition: all 0.5s ease;
+    margin: 1.5px 4px 0;
+    background-color: var(--quick-settings-background);
+    padding: 2px 0 0;
+
+}
+
+.grid-circle {
+    position: absolute;
+    justify-self: center;
+    align-self: center;
+    width: 32px;
+    height: 32px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s ease;
+    background-color: rgba(128, 128, 128, 0.4);
+}
+.grid-circle:active{
+    background-color: #ffffff66;
+}
+/* DARK THEME BY DEFAULT */
+.settings-btn-icon{
+    width: auto;
+    height: 14px;
+    cursor: pointer;
+    filter: var(--settings-btn-icon-filter);
+}
+.btn-active{
+    filter: var(--settings-btn-icon-active-filter);
+}
+.activate{
+    background-color: #005eff;
+}
+.disappear{
+    background-color: transparent;
+}
+.settings {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 4px dashed transparent;
+    padding: 1px 0;
+}
+.settings-btn-name{
+    position: absolute;
+    width: 50px;
+    height: 18px;
+    font-size: 0.45em;
+    font-family: sans-serif;
+    color: var(--settings-btn-name-color);
+    bottom: -28px;
+    text-align: center;
+    display: none;
+}
+
+.settings-btn{
+    position: relative;
+    overflow: hidden;
+    transition: all 1s ease;
+    display: flex;
+    justify-content: center;
+    height: 220px;
+    width: 100%;
+    
+}
+.settings-btn-page1{
+    position: absolute;
+    width: 84%;
+    height: 90%;
+    margin-top: 3px;
+    transition: all .25s ease-in-out;
+}
+.settings-btn-page2{
+    position: absolute;
+    width: 90%;
+    height: 95%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 60px);
+    transition: all .25s ease-in-out;
+    transform: translateX(115%);
+}
+
+/* SETTINGS NAVIGATIONS BUTTONS */
+.previousSettings, .nextSettings{
+    position: absolute;
+    height: 175px;
+    width: 8px;
+    display: none;
+    cursor: pointer;
+}
+.previousSettings{
+    left: -2px;
+}
+.nextSettings{
+    right: -2px;
+}
+.previousSettings:hover, .nextSettings:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.previousSettings:active, .nextSettings:active {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.more-settings-btn{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 15%;
+    height: fit-content;
+    margin-bottom: 5px;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+/* BRIGHTNESS LEVEL */
+.settings-brightness{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 7px;
+    transition: all 0.5s ease;
+    background-color: var(--quick-settings-background);
+}
+.brightness{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#down-arrow{
+    height: 4px;
+    width: auto;
+}
+#down-arrow:hover{
+    transform: translateY(2px);
+}
+#down-arrow:active{
+    transform: translateY(2.5px);
+}
+.b-icon{
+    position: relative;
+    height: 12px;
+    width: auto;
+    margin: 0 10px;
+}
+
+.brightness-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.auto-brightness{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.brightness-container-measure{
+    position: relative;
+    width: 155px;
+    height: 25px;
+    border-radius: 14px;
+    background-color: rgba(0, 60, 255, 0.25);
+    margin: 4px 0 4px;
+    cursor: pointer;
+    overflow: hidden;
+}
+.brightness-level{
+    position: absolute;
+    bottom: 0;
+    width: 30%;
+    height: 25px;
+    max-height: 100%;
+    min-height: 0%;
+    transition: all .1s ease-out;
+    background-color: rgb(0, 94, 255);
+}
+
+
+
+
+
+
+/* Battery */
+.signal-battery img:last-child {
+    width: auto;
+    height: 8.5px;
+}
+/* Other active settings button */
+.signal-battery img:not(:last-child){
+    width: auto;
+    height: 8.5px;
+    margin-right: 4px;
+    display: none;
+}
+.show-icon{
+    display: block !important;
+}
+
+/* SETTINGS PAGINATION */
+.settings-pagination{
+    height: fit-content;
+    width: fit-content;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    border: 1px dashed transparent;
+    display: none;
+}
+.settings-pagination .settings-page1{
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: rgb(0, 94, 255);
+    margin: 0 1.5px;
+    transition: all 0.5s ease-in-out;
+}
+.settings-pagination .settings-page2{
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: rgba(0, 60, 255, 0.25);
+    margin: 0 1.5px;
+    transition: all 0.5s ease-in-out;
+}

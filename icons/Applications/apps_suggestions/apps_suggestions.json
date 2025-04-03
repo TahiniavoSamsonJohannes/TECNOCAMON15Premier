@@ -1,0 +1,34 @@
+[
+    {
+        "nom": "Angela Talking",
+        "chemin": "/icons/Applications/apps_suggestions/Angela Talking.png"
+    },
+    {
+        "nom": "Baking Cake",
+        "chemin": "/icons/Applications/apps_suggestions/Baking Cake.png"
+    },
+    {
+        "nom": "Cube elipse",
+        "chemin": "/icons/Applications/apps_suggestions/Cube elipse.png"
+    },
+    {
+        "nom": "Home Durty",
+        "chemin": "/icons/Applications/apps_suggestions/Home Durty.png"
+    },
+    {
+        "nom": "Mommy Simulator",
+        "chemin": "/icons/Applications/apps_suggestions/Mommy Simulator.png"
+    },
+    {
+        "nom": "Run Man",
+        "chemin": "/icons/Applications/apps_suggestions/Run Man.png"
+    },
+    {
+        "nom": "Subway Surfer",
+        "chemin": "/icons/Applications/apps_suggestions/Subway Surfer.png"
+    },
+    {
+        "nom": "Temple Run",
+        "chemin": "/icons/Applications/apps_suggestions/Temple Run.png"
+    }
+]

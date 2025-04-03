@@ -1,0 +1,38 @@
+[
+    {
+        "nom": "Palm Store",
+        "chemin": "/icons/Applications/P/Palm Store.png"
+    },
+    {
+        "nom": "Phoenix",
+        "chemin": "/icons/Applications/P/Phoenix.png"
+    },
+    {
+        "nom": "Phone Master",
+        "chemin": "/icons/Applications/P/Phone Master.png"
+    },
+    {
+        "nom": "Photo Lab",
+        "chemin": "/icons/Applications/P/Photo Lab.png"
+    },
+    {
+        "nom": "Photomath",
+        "chemin": "/icons/Applications/P/Photomath.png"
+    },
+    {
+        "nom": "Photos",
+        "chemin": "/icons/Applications/P/Photos.png"
+    },
+    {
+        "nom": "PicSay Pro",
+        "chemin": "/icons/Applications/P/PicSay Pro.png"
+    },
+    {
+        "nom": "Play Store",
+        "chemin": "/icons/Applications/P/Play Store.png"
+    },
+    {
+        "nom": "Proton Video Compressor",
+        "chemin": "/icons/Applications/P/Proton Video Compressor.png"
+    }
+]

@@ -1,0 +1,26 @@
+[
+    {
+        "nom": "Learn CSS",
+        "chemin": "/icons/Applications/L/Learn CSS.png"
+    },
+    {
+        "nom": "Learn HMTL",
+        "chemin": "/icons/Applications/L/Learn HTML.png"
+    },
+    {
+        "nom": "Learn JavaScript",
+        "chemin": "/icons/Applications/L/Learn JavaScript.png"
+    },
+    {
+        "nom": "LingoTube",
+        "chemin": "/icons/Applications/L/LingoTube.png"
+    },
+    {
+        "nom": "LinkedIn",
+        "chemin": "/icons/Applications/L/LinkedIn.png"
+    },
+    {
+        "nom": "Lite",
+        "chemin": "/icons/Applications/L/Lite.png"
+    }
+]

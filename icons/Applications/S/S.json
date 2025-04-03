@@ -1,0 +1,18 @@
+[
+    {
+        "nom": "Sketch Photo",
+        "chemin": "/icons/Applications/S/Sketch Photo.png"
+    },
+    {
+        "nom": "Solfa++",
+        "chemin": "/icons/Applications/S/Solfa.png"
+    },
+    {
+        "nom": "Street View",
+        "chemin": "/icons/Applications/S/Street View.png"
+    },
+    {
+        "nom": "Synonyms",
+        "chemin": "/icons/Applications/S/Synonyms.png"
+    }
+]

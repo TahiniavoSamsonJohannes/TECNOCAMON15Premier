@@ -1,0 +1,24 @@
+.pagination{
+    height: 8%;
+    text-align: center;
+    display: flex;
+    justify-content: center;/* 
+    border: 2px dashed rgb(255, 0, 0); */
+}
+
+.pagination .page1{
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    margin: 10px 3px 0;
+    transition: all 0.5s ease-in-out;
+}
+.pagination .page2{
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: #ffffff50;
+    margin: 10px 3px 0;
+    transition: all 0.5s ease-in-out;
+}

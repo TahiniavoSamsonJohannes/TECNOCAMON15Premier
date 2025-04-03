@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Informations affichées sur les moteurs de recherches comme Google, Bing et Yahoo -->
+    <meta charset="UTF-8">
+    <meta name="author" content="TAHINIAVO Samson Johannès">
+    <meta name="title" content="TECNO CAMON 15 Premier">
+    <meta name="description" content="La modélisation d'un smartphone Android TECNO CAMON 15 Premier sur une page web.">
+    <!-- Pour rendre la page responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TECNO CAMON 15 Premier</title>
+
+    <style>
+        *{
+            user-select: none;
+        }
+    </style>
+
+    <!-- Cascading Stylesheets -->
+    <link rel="stylesheet" href="css/phone.css" />
+    <link rel="stylesheet" href="css/notifications-bar.css" />
+    <link rel="stylesheet" href="css/applications.css" />
+    <link rel="stylesheet" href="css/navigation-buttons.css" />
+    <link rel="stylesheet" href="css/notification-panel.css" />
+    <link rel="stylesheet" href="css/volume-control-overlay.css" />
+    <link rel="stylesheet" href="css/home-screen.css">
+    <link rel="stylesheet" href="css/apps-drawer.css">
+    <!-- Favicons -->
+    <link rel="icon" href="icons/TecnoCAMON15Premier.png">
+
+   
+    
+
+</head>
+<body>
+    
+    <div class="phone-container">
+        <!-- PHONE BUTTONS -->
+         <div class="phone-btn">
+            <div class="btn-volume">
+                <div class="phone-btn-volume-up" onclick="volumeUp()"></div>
+                <div class="phone-btn-volume-down" onclick="volumeDown()"></div>
+            </div>
+             <div class="phone-btn-power"></div>
+         </div>
+
+        <!-- PHONE -->
+        <div class="phone">
+            <!-- PHONE SPEAKER -->
+            <div class="phone-speaker">
+                <div class="o"></div>
+                <div class="o"></div>
+                <div class="o"></div>
+                <div class="o"></div>
+                <div class="o"></div>
+                <div class="o"></div>
+                <div class="o"></div>
+                <div class="o"></div>
+                <div class="o"></div>
+                <div class="o"></div>
+                <div class="o"></div>
+                <div class="o"></div>
+                <div class="o"></div>
+                <div class="o"></div>
+                <div class="o"></div>
+                <div class="o"></div>
+                <div class="o"></div>
+                <div class="o"></div>
+                <div class="o"></div>
+                <div class="o"></div>
+            </div>
+
+            <div class="phone-border">
+                <div class="phone-body">
+                    <div class="screen">
+                        <!-- NOTIFICATION PANEL -->
+                        <div class="notification-panel-toggle-button"></div>
+                        <div class="notification-panel-container">
+                            <div class="notification-panel">
+
+                                <div class="notification-panel-signal-battery">
+                                    <div class="signal-battery">
+                                        <img src="icons/Barre_detat/vibrate_notif.png">
+                                        <img id="nodisturb" src="icons/Barre_detat/Ne_pas_deranger_icone.png">
+                                        <img id="hotspot" src="icons/Barre_detat/Point_dacces.png">
+                                        <div class="signal-SIM1">
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                        </div>
+                                        <div class="signal-SIM2">
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                        </div>
+                                        <img src="icons/Barre_detat/Batterie.png">
+                                    </div>
+                                </div>
+                        
+                                <div class="notification-panel-time-date-sim-filter-settings">
+                                    <div class="notif-time">00:00</div>
+                                    <div class="notif-date-sim">
+                                        <div class="notif-date">Sam. 27 avr.</div>
+                                        <div class="notif-sim">Telma – Airtel</div>
+                                    </div>
+                                    <div class="filter-notif-settings">
+                                        <img src="icons/Raccourci_parametres/Modifier.png">
+                                        <img src="icons/Raccourci_parametres/Filtre_de_notification.png">
+                                        <img src="icons/Raccourci_parametres/Parametres_blanc.png">
+                                    </div>
+                                </div>
+                        
+                                <div class="quick-settings">
+                                    <div class="settings">
+                                        <div class="settings-btn">
+                                            <!-- SETTINGS NAVIGATION BUTTONS -->
+                                            <div class="previousSettings" onclick="previousSettings()"></div>
+                                            <div class="nextSettings" onclick="nextSettings()"></div>
+                                            
+                                            <div class="settings-btn-page1">
+                                                <div class="grid-circle" id="wifi"><img class="settings-btn-icon" src="icons/Raccourci_parametres/Wi-Fi.png" alt="wifi"><p class="settings-btn-name">Wi-Fi</p></div>
+                                                <div class="grid-circle" id="bluetooth"><img class="settings-btn-icon" src="icons/Raccourci_parametres/Bluetooth.png"><p class="settings-btn-name">Bluetooth</p></div>
+                                                <div class="grid-circle" id="flyMode"><img class="settings-btn-icon" src="icons/Raccourci_parametres/Mode_avion.png"><p class="settings-btn-name">Mode avion</p></div>
+                                                <div class="grid-circle" id="torch"><img class="settings-btn-icon" src="icons/Raccourci_parametres/Lampe_de_poche.png" alt="lamp"><p class="settings-btn-name">Lampe de poche</p></div>
+                                                
+                                                <div class="grid-circle" id="data"><img class="settings-btn-icon" src="icons/Raccourci_parametres/Connexion_des_donnees.png"><p class="settings-btn-name">Connexion des données</p></div>
+                                                <div class="grid-circle activate" id="sim"><img class="settings-btn-icon btn-active" src="icons/Raccourci_parametres/SIM1.png" alt="sim"><p class="settings-btn-name">Changer la SIM de données</p></div>
+                                                <div class="grid-circle" id="disturb"><img class="settings-btn-icon" src="icons/Raccourci_parametres/Ne_pas_deranger.png" alt="nodisturb"><p class="settings-btn-name">Ne pas déranger</p></div>
+                                                <div class="grid-circle" id="rotateAuto"><img class="settings-btn-icon" src="icons/Raccourci_parametres/Rotation_automatique.png"><p class="settings-btn-name">Rotation automatique</p></div>
+                                                
+                                                <div class="grid-circle" id="gameMod"><img class="settings-btn-icon" src="icons/Raccourci_parametres/Mode_jeu.png"><p class="settings-btn-name">Mode jeu</p></div>
+                                                <div class="grid-circle activate" id="theme"><img class="settings-btn-icon btn-active" src="icons/Raccourci_parametres/Theme_fonce.png" alt="theme"><p class="settings-btn-name">Thème foncé</p></div>
+                                                <div class="grid-circle" id="makeScreenshot"><img class="settings-btn-icon" src="icons/Raccourci_parametres/Capture_decran.png"><p class="settings-btn-name">Capture d'écran</p></div>
+                                                <div class="grid-circle" id="accessPoint"><img class="settings-btn-icon" src="icons/Raccourci_parametres/Point_dacces.png" alt="hotspot"><p class="settings-btn-name">Point d'accès</p></div>
+                                            </div>
+                            
+                                            <div class="settings-btn-page2">
+                                                <div class="grid-circle  activate" id="GPSlocation"><img class="settings-btn-icon btn-active" src="icons/Raccourci_parametres/Localisation.png"><p class="settings-btn-name">Localisation</p></div>
+                                                <div class="grid-circle" id="nocturnal"><img class="settings-btn-icon" src="icons/Raccourci_parametres/Eclairage_nocturne.png"><p class="settings-btn-name">Éclairage nocturne</p></div>
+                                                <div class="grid-circle" id="dataSave"><img class="settings-btn-icon" src="icons/Raccourci_parametres/Economiseur_de_donnees.png"><p class="settings-btn-name">Économiseur de données</p></div>
+                                                <div class="grid-circle" id="bikeMod"><img class="settings-btn-icon" src="icons/Raccourci_parametres/Mode_velo.png"><p class="settings-btn-name">Mode vélo</p></div>
+            
+                                                <div class="grid-circle" id="screenVocalRecord"><img class="settings-btn-icon" src="icons/Raccourci_parametres/Enregistrement_decran_vocal.png"><p class="settings-btn-name">Enregistrement d'écran vocal</p></div>
+                                                <div class="grid-circle" id="batterySave"><img class="settings-btn-icon" src="icons/Raccourci_parametres/Economiseur_de_batterie.png"><p class="settings-btn-name">Économiseur de batterie</p></div>
+                                                <div class="grid-circle" id="oneHandMod"><img class="settings-btn-icon" src="icons/Raccourci_parametres/Mode_a_une_main.png"><p class="settings-btn-name">Mode à une main</p></div>
+                                                <div class="grid-circle" id="whatsAppMod"><img class="settings-btn-icon" src="icons/Raccourci_parametres/Mode_WhatsApp.png"><p class="settings-btn-name">Mode WhatsApp</p></div>
+                                                
+                                                <div class="grid-circle" id="caster"><img class="settings-btn-icon" src="icons/Raccourci_parametres/Mode_jeu.png"><p class="settings-btn-name">Caster</p></div>
+                                                <div class="grid-circle" id="hiTranslate"><img class="settings-btn-icon" src="icons/Raccourci_parametres/Hi_Translate.png"><p class="settings-btn-name">Hi Translate</p></div>
+                                                <div class="grid-circle disappear"></div>
+                                                <div class="grid-circle disappear"></div>
+                                            </div>
+                                        </div>
+                                        
+                                        
+                                        <div class="settings-brightness">
+                                            <!-- MORE SETTINGS (DOWN ARROW) AND SETTINGS PAGINATION -->
+                                            <div class="more-settings-btn">
+                                                <div class="settings-pagination">
+                                                    <div class="settings-page1"></div>
+                                                    <div class="settings-page2"></div>
+                                                </div>
+                                                <img id="down-arrow" src="icons/Raccourci_parametres/down_arrow.png">
+                                            </div>
+                                            
+                                            <div class="brightness">
+                                                <div class="brightness-icon"><img class="b-icon" id="brightness-icon" src="icons/Raccourci_parametres/Luminosite.png"></div>
+                                                
+                                                    <div class="brightness-container-measure">
+                                                        <div class="brightness-level"></div>
+                                                    </div>
+                        
+                                                <div class="auto-brightness" id="brightness-auto"><img onclick="switchBrightnessAuto(this)" class="b-icon" src="icons/Raccourci_parametres/Luminosite_automatique.png"></div>
+                                            
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- VOLUME -->
+                        <div class="volume-control-overlay">
+                            <div class="ring-state" onclick="ringState()">
+                                <img class="ring-state-icon" draggable="false" id="ring-state" src="icons/Volume/ring.png">
+                            </div>
+                            <div class="medias-volume">
+                                <div class="volume-container-measure">
+                                    <div class="volume-medias-icon" id="volume-medias-icon">
+                                        <img class="ring-state-icon" draggable="false" id="volume-medias-state" src="icons/Volume/volume_medias.png">
+                                    </div>
+                                    <div class="volume-level"></div>
+                                </div>
+                                <div class="more-volume-settings">
+                                        <div class="more"></div>
+                                        <div class="more"></div>
+                                        <div class="more"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- NOTIFICATION BAR -->
+                        <div class="notification-bar">
+                            <div class="time" id="time">00:00</div>
+                            <div class="signal-battery">
+                                <img src="icons/Barre_detat/vibrate_notif.png">
+                                <img id="nodisturb" src="icons/Barre_detat/Ne_pas_deranger_icone.png">
+                                <img id="hotspot" src="icons/Barre_detat/Point_dacces.png">
+                                <div class="signal-SIM1">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                                <div class="signal-SIM2">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                                <img src="icons/Barre_detat/Batterie.png">
+                            </div>
+                        </div>
+
+                        <!-- INTERFACE -->
+                        <div class="interface">
+                            <!-- POPUPS -->
+                            <div class="long-press-app-popup">
+                                <div class="popup" id="uninstall-app"><img src="icons/long_press/Desinstaller.png"><p class="popup-text">Désinstaller</p></div>
+                                <div class="popup" id="informations-app"><img src="icons/long_press/Informations.png"><p class="popup-text">Informations</p></div>
+                                <div class="popup" id="send-app-to-desktop"><img src="icons/long_press/Envoyer_vers_bureau.png"><p class="popup-text">Envoyer sur le bureau</p></div>
+                                <svg class="inversed-triangle1" width="32" height="4" xmlns="http://www.w3.org/2000/svg">
+                                    <polygon points="16,3 12,0 20,0" style="stroke-width:1" />
+                                </svg>
+                            </div>
+                            <div class="long-press-app-desktop-popup">
+                                <div id="delete-app"><img src="icons/long_press/Supprimer.png"><p class="popup-text">Supprimer</p></div>
+                                <svg class="inversed-triangle2" width="32" height="4" xmlns="http://www.w3.org/2000/svg">
+                                    <polygon points="16,3 12,0 20,0" style="stroke-width:1" />
+                                </svg>
+                            </div>
+                            <!-- ----------------------------------------- -->
+                            <div class="desktop">
+                                <div class="appsDesktop">
+                                    <div class="appsDesktopEdges" id="previousPage"></div>
+                                    <div class="appsDesktopEdges" id="nextPage"></div>
+
+                                    <!-- GRID CONTAINER OF APPS BY DEFAULT -->
+                                    <div class="grid-container" id="container1">
+                                        <div class="grid-cell" data-cell="0"></div>
+                                        <div class="grid-cell" data-cell="1"></div>
+                                        <div class="grid-cell" data-cell="2"></div>
+                                        <div class="grid-cell" data-cell="3"></div>
+                                        <div class="grid-cell" data-cell="4"></div>
+                                        <div class="grid-cell" data-cell="5"></div>
+                                        <div class="grid-cell" data-cell="6"></div>
+                                        <div class="grid-cell" data-cell="7"></div>
+                                        <div class="grid-cell" data-cell="8"></div>
+                                        <div class="grid-cell" data-cell="9"></div>
+                                        <div class="grid-cell" data-cell="10"></div>
+                                        <div class="grid-cell" data-cell="11"></div>
+                                        <div class="grid-cell" data-cell="12"></div>
+                                        <div class="grid-cell" data-cell="13"></div>
+                                        <div class="grid-cell" data-cell="14"></div>
+                                        <div class="grid-cell" data-cell="15"></div>
+                                        <div class="grid-cell" data-cell="16"></div>
+                                        <div class="grid-cell" data-cell="17"></div>
+                                        <div class="grid-cell" data-cell="18"></div>
+                                        <div class="grid-cell" data-cell="19"></div>
+                                        <div class="grid-cell" data-cell="20"></div>
+                                        <div class="grid-cell" data-cell="21"></div>
+                                        <div class="grid-cell" data-cell="22"></div>
+                                        <div class="grid-cell" data-cell="23"></div>
+                                        <div class="grid-cell" data-cell="24">
+                                            <div class="draggable" data-cell="24"><img src="icons/Applications/R/Raccourci E-media.png" alt="Accueil E-media"></div>
+                                        </div>
+                                    </div>
+                                    <div class="grid-container" id="container2">
+                                        <div class="grid-cell" data-cell="0">
+                                            <div class="draggable" data-cell="0"><img src="icons/Applications/C/Congélateur.png" alt="Congélateur"></div>
+                                        </div>
+                                        <div class="grid-cell" data-cell="1">
+                                            <div class="draggable" data-cell="1"><img src="icons/Applications/M/Meet.png" alt="Meet"></div>
+                                        </div>
+                                        <div class="grid-cell" data-cell="2">
+                                            <div class="draggable" data-cell="2"><img src="icons/Applications/B/Bloc-note.png" alt="Bloc-note"></div>
+                                        </div>
+                                        <div class="grid-cell" data-cell="3">
+                                            <div class="draggable" data-cell="3"><img src="icons/Applications/C/CamScanner.png" alt="CamScanner"></div>
+                                        </div>
+                                        <div class="grid-cell" data-cell="4">
+                                            <div class="draggable" data-cell="4"><img src="icons/Applications/H/Horloge.png" alt="Horloge"></div>
+                                        </div>
+                                        <div class="grid-cell" data-cell="5">
+                                            <div class="draggable" data-cell="5"><img src="icons/Applications/A/Anglais.png" alt="Anglais"></div>
+                                        </div>
+                                        <div class="grid-cell" data-cell="6">
+                                            <div class="draggable" data-cell="6"><img src="icons/Applications/F/Français.png" alt="Français"></div>
+                                        </div>
+                                        <div class="grid-cell" data-cell="7">
+                                            <div class="draggable" data-cell="7"><img src="icons/Applications/C/Calculator.png" alt="Calculator"></div>
+                                        </div>
+                                        <div class="grid-cell" data-cell="8">
+                                            <div class="draggable" data-cell="8"><img src="icons/Applications/G/Gestionnaire de fichiers.png" alt="Gestionnaire de fichiers"></div>
+                                        </div>
+                                        <div class="grid-cell" data-cell="9">
+                                            <div class="draggable" data-cell="9"><img src="icons/Applications/M/Maps.png" alt="Maps"></div>
+                                        </div>
+                                        <div class="grid-cell" data-cell="10">
+                                            <div class="draggable" data-cell="10"><img src="icons/Applications/X/Xender.png" alt="Xender"></div>
+                                        </div>
+                                        <div class="grid-cell" data-cell="11">
+                                            <div class="draggable" data-cell="11"><img src="icons/Applications/A/Accélérateur.png" alt="Accélérateur"></div>
+                                        </div>
+                                        <div class="grid-cell" data-cell="12">
+                                            <div class="draggable" data-cell="12"><img src="icons/Applications/M/Messenger.png" alt="Messenger"></div>
+                                        </div>
+                                        <div class="grid-cell" data-cell="13">
+                                            <div class="draggable" data-cell="13"><img src="icons/Applications/F/Facebook.png" alt="Facebook"></div>
+                                        </div>
+                                        <div class="grid-cell" data-cell="14">
+                                            <div class="draggable" data-cell="14"><img src="icons/Applications/E/English stories.png" alt="English stories"></div>
+                                        </div>
+                                        <div class="grid-cell" data-cell="15">
+                                            <div class="draggable" data-cell="15"><img src="icons/Applications/F/Fre-Eng Dictionnary.png" alt="Fre-Eng Dictionnary"></div>
+                                        </div>
+                                        <div class="grid-cell" data-cell="16">
+                                            <div class="draggable" data-cell="16"><img src="icons/Applications/K/Kinemaster.png" alt="Kinemaster"></div>
+                                        </div>
+                                        <div class="grid-cell" data-cell="17"></div>
+                                        <div class="grid-cell" data-cell="18">
+                                            <div class="draggable" data-cell="18"><img src="icons/Applications/M/MAPS.ME.png" alt="MAPS.ME"></div>
+                                        </div>
+                                        <div class="grid-cell" data-cell="19"></div>
+                                        <div class="grid-cell" data-cell="20"></div>
+                                        <div class="grid-cell" data-cell="21">
+                                            <div class="draggable" data-cell="20"><img src="icons/Applications/W/WhatsApp.png" alt="WhatsApp"></div>
+                                        </div>
+                                        <div class="grid-cell" data-cell="22"></div>
+                                        <div class="grid-cell" data-cell="23"></div>
+                                        <div class="grid-cell" data-cell="24"></div>
+                                    </div>
+                                    <div class="grid-container" id="container3">
+                                        <div class="grid-cell" data-cell="0"></div>
+                                        <div class="grid-cell" data-cell="1"></div>
+                                        <div class="grid-cell" data-cell="2"></div>
+                                        <div class="grid-cell" data-cell="3">
+                                            <div class="draggable" data-cell="3"><img src="icons/Applications/F/Formule Free.png" alt="Formule Free"></div>
+                                        </div>
+                                        <div class="grid-cell" data-cell="4"></div>
+                                        <div class="grid-cell" data-cell="5">
+                                            <div class="draggable" data-cell="5"><img src="icons/Applications/R/Rubiks Cube.png" alt="Rubik's Cube"></div>
+                                        </div>
+                                        <div class="grid-cell" data-cell="6">
+                                            <div class="draggable" data-cell="6"><img src="icons/Applications/P/Photomath.png" alt="Photomath"></div>
+                                        </div>
+                                        <div class="grid-cell" data-cell="7">
+                                            <div class="draggable" data-cell="7"><img src="icons/Applications/S/Street View.png" alt="Street View"></div>
+                                        </div>
+                                        <div class="grid-cell" data-cell="8"></div>
+                                        <div class="grid-cell" data-cell="9"></div>
+                                        <div class="grid-cell" data-cell="10"></div>
+                                        <div class="grid-cell" data-cell="11"></div>
+                                        <div class="grid-cell" data-cell="12"></div>
+                                        <div class="grid-cell" data-cell="13"></div>
+                                        <div class="grid-cell" data-cell="14"></div>
+                                        <div class="grid-cell" data-cell="15"></div>
+                                        <div class="grid-cell" data-cell="16"></div>
+                                        <div class="grid-cell" data-cell="17"></div>
+                                        <div class="grid-cell" data-cell="18">
+                                            <div class="draggable" data-cell="18"><img src="icons/Applications/S/Synonyms.png" alt="Synonyms"></div>
+                                        </div>
+                                        <div class="grid-cell" data-cell="19"></div>
+                                        <div class="grid-cell" data-cell="20"></div>
+                                        <div class="grid-cell" data-cell="21">
+                                            <div class="draggable" data-cell="21"><img src="icons/Applications/P/Proton Video Compressor.png" alt="Proton Video Compressor"></div>
+                                        </div>
+                                        <div class="grid-cell" data-cell="22"></div>
+                                        <div class="grid-cell" data-cell="23"></div>
+                                        <div class="grid-cell" data-cell="24">
+                                            <div class="draggable" data-cell="24"><img src="icons/Applications/R/Rakibolana Malagasy.png" alt="Rakibolana Malagasy"></div></div>
+                                    </div>
+                                </div>
+                                <div class="grid-container-pagination"><div class="circle-pagination" id="cp1"></div><div class="circle-pagination" id="cp2"></div><div class="circle-pagination" id="cp3"></div></div>
+                            
+                                
+                                
+                                <!-- ----------------------------------------- -->
+                                <div class="quick-access-apps">
+                                    <div class="grid-container-quick-access" id="containerX">
+                                        <div class="grid-cell" data-cell="0">
+                                            <div class="draggable" data-cell="0"><img src="icons/Applications/T/Téléphone.png" alt="Téléphone"></div>
+                                        </div>
+                                        <div class="grid-cell" data-cell="1">
+                                            <div class="draggable" data-cell="1"><img src="icons/Applications/C/Calculatrice.png" alt="Calculatrice"></div>
+                                        </div>
+                                        <div class="grid-cell" data-cell="2">
+                                            <div class="draggable" data-cell="2"><img src="icons/Applications/M/Magnétophone.png" alt="Magnétophone"></div>
+                                        </div>
+                                        <div class="grid-cell" data-cell="3">
+                                            <div class="draggable" data-cell="3"><img src="icons/Applications/M/Messages.png" alt="Messages"></div>
+                                        </div>
+                                        <div class="grid-cell" data-cell="4">
+                                            <div class="draggable" data-cell="4"><img src="icons/Applications/A/Appareil_photo.png" alt="Appareil photo"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="navigation-buttons">
+                                <div class="overview">
+                                    <img draggable="false" src="icons/Bouton_de_navigation/Aperçu.png"/>
+                                </div>
+                                <div class="home">
+                                    <img draggable="false" src="icons/Bouton_de_navigation/Accueil.png"/>
+                                </div>
+                                <div class="back">
+                                    <img draggable="false" src="icons/Bouton_de_navigation/Retour.png"/>
+                                </div>
+                            </div>
+
+                            <div class="apps-drawer-toggle-button"></div>
+                        </div>
+
+
+                        
+                        <!-- APPS DRAWER -->
+                        <div class="apps-drawer">
+                            <div class="all-apps">
+                                <!-- SEARCH APP -->
+                                <div class="search-app-container">
+                                    <div class="search-app">
+                                        <img src="icons/Gestionnaire_de_fichiers/Rechercher_gris.png">
+                                        <input type="text" placeholder="Rechercher dans les applications">
+                                    </div>
+                                    <div class="search-app-more">
+                                        <img src="icons/More_white.png">
+                                    </div>
+                                </div>
+                    
+                                <div class="apps-drawer-pagination-container">
+                                    <div class="apps-drawer-pagination" id="games-suggestions" data-pagination="&lt;img src='icons/Applications/apps_suggestions_off.png'&gt;"><img src="icons/Applications/apps_suggestions_off.png"></div>
+                                    <div class="apps-drawer-pagination" id="favorites-apps" data-pagination="&lt;img src='icons/Applications/favorites_apps_off.png'&gt;"><img src="icons/Applications/favorites_apps_off.png"></div>
+                                    <div class="apps-drawer-pagination" id="A" data-pagination="A">A</div>
+                                    <div class="apps-drawer-pagination" id="B" data-pagination="B">B</div>
+                                    <div class="apps-drawer-pagination" id="C" data-pagination="C">C</div>
+                                    <div class="apps-drawer-pagination" id="D" data-pagination="D">D</div>
+                                    <div class="apps-drawer-pagination" id="E" data-pagination="E">E</div>
+                                    <div class="apps-drawer-pagination" id="F" data-pagination="F">F</div>
+                                    <div class="apps-drawer-pagination" id="G" data-pagination="G">G</div>
+                                    <div class="apps-drawer-pagination" id="H" data-pagination="H">H</div>
+                                    <div class="apps-drawer-pagination" id="K" data-pagination="K">K</div>
+                                    <div class="apps-drawer-pagination" id="L" data-pagination="L">L</div>
+                                    <div class="apps-drawer-pagination" id="M" data-pagination="M">M</div>
+                                    <div class="apps-drawer-pagination" id="P" data-pagination="P">P</div>
+                                    <div class="apps-drawer-pagination" id="R" data-pagination="R">R</div>
+                                    <div class="apps-drawer-pagination" id="S" data-pagination="S">S</div>
+                                    <div class="apps-drawer-pagination" id="T" data-pagination="T">T</div>
+                                    <div class="apps-drawer-pagination" id="U" data-pagination="U">U</div>
+                                    <div class="apps-drawer-pagination" id="W" data-pagination="W">W</div>
+                                    <div class="apps-drawer-pagination" id="X" data-pagination="X">X</div>
+                                    <div class="apps-drawer-pagination-popup"></div>
+                                </div>
+                                <!-- LIST OF ALL APPS -->
+                                <div class="list-of-all-apps">
+                                    
+                                    <!-- SUGGESTIONS GAMES -->
+                                    <div class="games-suggestions">
+                                        <div class="apps-label" id="games-suggestions"></div>
+                                        <div class="games-suggestions-label">
+                                            <p>Repose-toi un peu</p>
+                                            <p><img src="icons/Applications/historic.png">Historique</p>
+                                        </div>
+                        
+                                        <div id="games-suggestions-apps">
+                                            <table class="apps-table" id="&lt;img src='icons/Applications/apps_suggestions_off.png'&gt;">
+                                                <tr><td><div class="app"><img class='app-icon' src='./icons/Applications/apps_suggestions/Angela Talking.png' alt='Angela Talking'></div></td><td><div class="app"><img class='app-icon' src='./icons/Applications/apps_suggestions/Baking Cake.png' alt='Baking Cake'></div></td><td><div class="app"><img class='app-icon' src='./icons/Applications/apps_suggestions/Cube elipse.png' alt='Cube elipse'></div></td><td><div class="app"><img class='app-icon' src='./icons/Applications/apps_suggestions/Home Durty.png' alt='Home Durty'></div></td></tr>
+                                                <tr><td><div class="app"><img class='app-icon' src='./icons/Applications/apps_suggestions/Mommy Simulator.png' alt='Mommy Simulator'></div></td><td><div class="app"><img class='app-icon' src='./icons/Applications/apps_suggestions/Run Man.png' alt='Run Man'></div></td><td><div class="app"><img class='app-icon' src='./icons/Applications/apps_suggestions/Subway Surfer.png' alt='Subway Surfer'></div></td><td><div class="app"><img class='app-icon' src='./icons/Applications/apps_suggestions/Temple Run.png' alt='Temple Run'></div></td></tr>
+                                            </table>
+                                        </div>    
+                                    </div>
+                        
+                                    <!-- REFRESH GAMES BUTTON -->
+                                    <div id="refresh-games-button">
+                                        <hr>
+                                        <div><img src="icons/Applications/refresh.png">Actualiser</div>
+                                        <hr>
+                                    </div>
+                                    
+                                    <!-- FAVORITES APPS -->
+                                    <div class="apps-label" id="favorites-apps">
+                                        <img src="icons/Applications/favorites_apps.png">
+                                    </div>
+                                    <div id="favorites-apps">
+                                        <table class="apps-table" id="&lt;img src='icons/Applications/favorites_apps_off.png'&gt;">
+                                            <tr><td><div class="app"><img class='app-icon' src='./icons/Applications/favorites_apps/ChatGPT.png' alt='ChatGPT'></div></td><td><div class="app"><img class='app-icon' src='./icons/Applications/favorites_apps/Facebook.png' alt='Facebook'></div></td><td><div class="app"><img class='app-icon' src='./icons/Applications/favorites_apps/PicSay Pro.png' alt='PicSay Pro'></div></td><td><div class="app"><img class='app-icon' src='./icons/Applications/favorites_apps/Play Store.png' alt='Play Store'></div></td></tr>
+                                            <tr><td><div class="app"><img class='app-icon' src='./icons/Applications/favorites_apps/Téléphone.png' alt='Téléphone'></div></td><td><div class="app"><img class='app-icon' src='./icons/Applications/favorites_apps/TubeMate.png' alt='TubeMate'></div></td><td><div class="app"><img class='app-icon' src='./icons/Applications/favorites_apps/Xender.png' alt='Xender'></div></td></tr>
+                                        </table>
+                                    </div>
+                        
+                                    <!-- A -->
+                                    <div class="apps-label" id="A">A</div>
+                                    <table class="apps-table" id="A">
+                                        <tr><td><div class="app"><img class='app-icon' src='./icons/Applications/A/Accélérateur.png' alt='Accélérateur'></div></td><td><div class="app"><img class='app-icon' src='./icons/Applications/A/Agenda.png' alt='Agenda'></div></td><td><div class="app"><img class='app-icon' src='./icons/Applications/A/Anglais.png' alt='Anglais'></div></td><td><div class="app"><img class='app-icon' src='./icons/Applications/A/Appareil_photo.png' alt='Appareil photo'></div></td></tr>
+                                    </table>
+                                    <!-- B -->
+                                    <div class="apps-label" id="B">B</div>
+                                    <table class="apps-table" id="B">
+                                        <tr><td><div class="app"><img class='app-icon' src='./icons/Applications/B/Bloc-note.png' alt='Bloc-note'></div></td><td><div class="app"><img class='app-icon' src='./icons/Applications/B/Boomplay.png' alt='Boomplay'></div></td></tr>
+                                    </table>
+                                    <!-- C -->
+                                    <div class="apps-label" id="C">C</div>
+                                    <table class="apps-table" id="C">
+                                        <tr><td><div class="app"><img class='app-icon' src='./icons/Applications/C/Calculator.png' alt='Calculator'></div></td><td><div class="app"><img class='app-icon' src='./icons/Applications/C/Calculatrice.png' alt='Calculatrice'></div></td><td><div class="app"><img class='app-icon' src='./icons/Applications/C/CamScanner.png' alt='CamScanner'></div></td><td><div class="app"><img class='app-icon' src='./icons/Applications/C/ChatGPT.png' alt='ChatGPT'></div></td></tr>
+                                        <tr><td><div class="app"><img class='app-icon' src='./icons/Applications/C/Chrome.png' alt='Chrome'></div></td><td><div class="app"><img class='app-icon' src='./icons/Applications/C/Contacts.png' alt='Contacts'></div></td><td><div class="app"><img class='app-icon' src='./icons/Applications/C/Congélateur.png' alt='Congélateur'></div></td></tr>
+                                    </table>
+                                    <!-- D -->
+                                    <div class="apps-label" id="D">D</div>
+                                    <table class="apps-table" id="D">
+                                        <tr><td><div class="app"><img class='app-icon' src='./icons/Applications/D/Drive.png' alt='Drive'></div></td></tr>
+                                    </table>
+                                    <!-- E -->
+                                    <div class="apps-label" id="E">E</div>
+                                    <table class="apps-table" id="E">
+                                        <tr><td><div class="app"><img class='app-icon' src='./icons/Applications/E/English stories.png' alt='English stories'></div></td></tr>
+                                    </table>
+                                    <!-- F -->
+                                    <div class="apps-label" id="F">F</div>
+                                    <table class="apps-table" id="F">
+                                        <tr><td><div class="app"><img class='app-icon' src='./icons/Applications/F/Facebook.png' alt='Facebook'></div></td><td><div class="app"><img class='app-icon' src='./icons/Applications/F/FM Radio.png' alt='FM Radio'></div></td><td><div class="app"><img class='app-icon' src='./icons/Applications/F/Folder Note.png' alt='Folder Note'></div></td><td><div class="app"><img class='app-icon' src='./icons/Applications/F/Formule Free.png' alt='Formule Free'></div></td></tr>
+                                        <tr><td><div class="app"><img class='app-icon' src='./icons/Applications/F/Français.png' alt='Français'></div></td><td><div class="app"><img class='app-icon' src='./icons/Applications/F/Fre-Eng Dictionnary.png' alt='Fre-Eng Dictionnary'></div></td></tr>
+                                    </table>
+                                    <!-- G -->
+                                    <div class="apps-label" id="G">G</div>
+                                    <table class="apps-table" id="G">
+                                        <tr><td><div class="app"><img class='app-icon' src='./icons/Applications/G/Galerie.png' alt='Galerie'></div></td><td><div class="app"><img class='app-icon' src='./icons/Applications/G/Gestionnaire de fichiers.png' alt='Gestionnaire de fichiers'></div></td><td><div class="app"><img class='app-icon' src='./icons/Applications/G/Gmail.png' alt='Gmail'></div></td><td><div class="app"><img class='app-icon' src='./icons/Applications/G/Google.png' alt='Google'></div></td></tr>
+                                    </table>
+                                    <!-- H -->
+                                    <div class="apps-label" id="H">H</div>
+                                    <table class="apps-table" id="H">
+                                        <tr><td><div class="app"><img class='app-icon' src='./icons/Applications/H/Hi Thème.png' alt='Hi Thème'></div></td><td><div class="app"><img class='app-icon' src='./icons/Applications/H/Horloge.png' alt='Horloge'></div></td></tr>
+                                    </table>
+                                    <!-- I -->
+                                    <!-- J -->
+                                    <!-- K -->
+                                    <div class="apps-label" id="K">K</div>
+                                    <table class="apps-table" id="K">
+                                        <tr><td><div class="app"><img class='app-icon' src='./icons/Applications/K/Kinemaster.png' alt='Kinemaster'></div></td></tr>
+                                    </table>
+                                    <!-- L -->
+                                    <div class="apps-label" id="L">L</div>
+                                    <table class="apps-table" id="L">
+                                        <tr><td><div class="app"><img class='app-icon' src='./icons/Applications/L/Learn CSS.png' alt='Learn CSS'></div></td><td><div class="app"><img class='app-icon' src='./icons/Applications/L/Learn HTML.png' alt='Learn HMTL'></div></td><td><div class="app"><img class='app-icon' src='./icons/Applications/L/Learn JavaScript.png' alt='Learn JavaScript'></div></td><td><div class="app"><img class='app-icon' src='./icons/Applications/L/LingoTube.png' alt='LingoTube'></div></td></tr>
+                                        <tr><td><div class="app"><img class='app-icon' src='./icons/Applications/L/LinkedIn.png' alt='LinkedIn'></div></td><td><div class="app"><img class='app-icon' src='./icons/Applications/L/Lite.png' alt='Lite'></div></td></tr>
+                                    </table>
+                                    <!-- M -->
+                                    <div class="apps-label" id="M">M</div>
+                                    <table class="apps-table" id="M">
+                                        <tr><td><div class="app"><img class='app-icon' src='./icons/Applications/M/Magnétophone.png' alt='Magnétophone'></div></td><td><div class="app"><img class='app-icon' src='./icons/Applications/M/MAPS.ME.png' alt='MAPS.ME'></div></td><td><div class="app"><img class='app-icon' src='./icons/Applications/M/Maps.png' alt='Maps'></div></td><td><div class="app"><img class='app-icon' src='./icons/Applications/M/Meet.png' alt='Meet'></div></td></tr>
+                                        <tr><td><div class="app"><img class='app-icon' src='./icons/Applications/M/Messages.png' alt='Messages'></div></td><td><div class="app"><img class='app-icon' src='./icons/Applications/M/Messenger.png' alt='Messenger'></div></td><td><div class="app"><img class='app-icon' src='./icons/Applications/M/Météo.png' alt='Météo'></div></td><td><div class="app"><img class='app-icon' src='./icons/Applications/M/Minecraft.png' alt='Minecraft'></div></td></tr>
+                                        <tr><td><div class="app"><img class='app-icon' src='./icons/Applications/M/MVola.png' alt='MVola'></div></td><td><div class="app"><img class='app-icon' src='./icons/Applications/M/My Airtel.png' alt='My Airtel'></div></td></tr>
+                                    </table>
+                                    <!-- N -->
+                                    <!-- O -->
+                                    <!-- P -->
+                                    <div class="apps-label" id="P">P</div>
+                                    <table class="apps-table" id="P">
+                                        <tr><td><div class="app"><img class='app-icon' src='./icons/Applications/P/Palm Store.png' alt='Palm Store'></div></td><td><div class="app"><img class='app-icon' src='./icons/Applications/P/Phoenix.png' alt='Phoenix'></div></td><td><div class="app"><img class='app-icon' src='./icons/Applications/P/Phone Master.png' alt='Phone Master'></div></td><td><div class="app"><img class='app-icon' src='./icons/Applications/P/Photo Lab.png' alt='Photo Lab'></div></td></tr>
+                                        <tr><td><div class="app"><img class='app-icon' src='./icons/Applications/P/Photomath.png' alt='Photomath'></div></td><td><div class="app"><img class='app-icon' src='./icons/Applications/P/Photos.png' alt='Photos'></div></td><td><div class="app"><img class='app-icon' src='./icons/Applications/P/PicSay Pro.png' alt='PicSay Pro'></div></td><td><div class="app"><img class='app-icon' src='./icons/Applications/P/Play Store.png' alt='Play Store'></div></td></tr>
+                                        <tr><td><div class="app"><img class='app-icon' src='./icons/Applications/P/Proton Video Compressor.png' alt='Proton Video Compressor'></div></td></tr>
+                                    </table>
+                                    <!-- Q -->
+                                    <!-- R -->
+                                    <div class="apps-label" id="R">R</div>
+                                    <table class="apps-table" id="R">
+                                        <tr><td><div class="app"><img class='app-icon' src='./icons/Applications/R/Raccourci E-media.png' alt='Accueil E-media'></div></td><td><div class="app"><img class='app-icon' src='./icons/Applications/R/Rakibolana Malagasy.png' alt='Rakibolana Malagasy'></div></td><td><div class="app"><img class='app-icon' src='./icons/Applications/R/Rotation.png' alt='Rotation'></div></td><td><div class="app"><img class='app-icon' src='./icons/Applications/R/Rubiks Cube.png' alt="Rubik's Cube"></div></td></tr>
+                                    </table>
+                                    <!-- S -->
+                                    <div class="apps-label" id="S">S</div>
+                                    <table class="apps-table" id="S">
+                                        <tr><td><div class="app"><img class='app-icon' src='./icons/Applications/S/Sketch Photo.png' alt='Sketch Photo'></div></td><td><div class="app"><img class='app-icon' src='./icons/Applications/S/Solfa.png' alt='Solfa++'></div></td><td><div class="app"><img class='app-icon' src='./icons/Applications/S/Street View.png' alt='Street View'></div></td><td><div class="app"><img class='app-icon' src='./icons/Applications/S/Synonyms.png' alt='Synonyms'></div></td></tr>
+                                    </table>
+                                    <!-- T -->
+                                    <div class="apps-label" id="T">T</div>
+                                    <table class="apps-table" id="T">
+                                        <tr><td><div class="app"><img class='app-icon' src='./icons/Applications/T/Téléphone.png' alt='Téléphone'></div></td><td><div class="app"><img class='app-icon' src='./icons/Applications/T/TubeMate.png' alt='TubeMate'></div></td></tr>
+                                    </table>
+                                    <!-- U -->
+                                    <div class="apps-label" id="U">U</div>
+                                    <table class="apps-table" id="U">
+                                        <tr><td><div class="app"><img class='app-icon' src='./icons/Applications/U/UltraCloud.png' alt='UltraCloud'></div></td><td><div class="app"><img class='app-icon' src='./icons/Applications/U/uTorrent.png' alt='uTorrent'></div></td></tr>
+                                    </table>
+                                    <!-- V -->
+                                    <!-- W -->
+                                    <div class="apps-label" id="W">W</div>
+                                    <table class="apps-table" id="W">
+                                        <tr><td><div class="app"><img class='app-icon' src='./icons/Applications/W/WhatsApp.png' alt='WhatsApp'></div></td></tr>
+                                    </table>
+                                    <!-- X -->
+                                    <div class="apps-label" id="X">X</div>
+                                    <table class="apps-table" id="X">
+                                        <tr><td><div class="app"><img class='app-icon' src='./icons/Applications/X/Xender.png' alt='Xender'></div></td></tr>
+                                    </table>
+                                    <!-- Y -->
+                                    <!-- Z -->
+                                </div>
+                                <div class="apps-drawer-bottom"></div>
+                            </div>
+                        </div>
+
+
+
+
+                        
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+     <!-- Scripts -->
+     <script type="text/javascript" src="js/date.js"></script>
+     <script type="text/javascript" src="js/jQuery-3.7.js"></script>
+     <script type="text/javascript" src="js/script.js"></script>
+     <script type="text/javascript" src="js/volumeControlOverlay.js"></script>
+     <script type="text/javascript" src="js/notificationPanel.js"></script>
+     <script type="text/javascript" src="js/homeScreen.js"></script>
+     <script type="text/javascript" src="js/appsDrawer.js"></script>
+     <script type="text/javascript" src="js/navigationButtons.js"></script>
+
+     <script>
+     </script>
+</body>
+</html>

@@ -1,0 +1,141 @@
+/* APPS DESKTOP ------------------------ */
+.desktop {
+    height: 420px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.3s ease;
+    /* 
+    border: 1px solid blueviolet; */
+}
+.appsDesktop {
+    display: inline flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid transparent;
+    position: relative;
+    align-self: center;
+    width: 225px;
+    height: 320px;
+}
+.quick-access-apps {
+    display: flex;
+    flex-direction: column;
+    border: 1px  dashed transparent;
+    margin-bottom: 2px;/* 
+    background-color: blueviolet; */
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    row-gap: 20px;
+    width: calc(160px + 55px); /* 215 */
+    height: calc(160px + 160px); /* 320 */
+    border: 1px solid transparent;
+    position: absolute;
+    transition: all 0.4s ease;
+    align-self: center;
+}
+
+.grid-container-quick-access {
+    display: flex;
+    height: 48px;
+    position: relative;
+}
+
+.grid-cell {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    transform: all .3s ease;
+    border: 1px solid transparent;
+}
+
+.draggable {
+    display: grid;
+    place-items: center;
+    justify-self: center;
+    align-self: center;
+    width: 30px;
+    height: 30px;/* 
+    background-color: #4CAF50; */
+    border-radius: 15px;
+    color: white;
+    transition: left 0.15s ease, top 0.15s ease, transform 0.3s ease;
+    position: absolute;
+    cursor: pointer;
+}
+.draggableText {
+    position: absolute;
+    bottom: -15px;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 8px;
+    color: white;
+    border: 1px solid transparent;
+    width: 42px;
+    white-space: nowrap; /* Empêche le texte de passer à la ligne */
+    overflow: hidden; /* Masque le texte qui dépasse */
+    text-overflow: ellipsis; /* Remplace le texte dépassant par ... */
+    cursor: pointer;
+    z-index: 50;
+}
+
+img{
+    height: 32px;
+    width: 32px;
+    z-index: 0;
+}
+.dragging {
+    opacity: 0.15 !important;
+}
+.drag-image{
+    opacity: 1 !important; /* L'image draggée soit pleinement visible */
+    pointer-events: none; /* Assure que ça n'interfère pas avec les évènements */
+    position: absolute;
+    z-index: 1000 !important;
+    transform: scale(1.1) !important;
+    transition: none;
+}
+.grid-container-pagination {
+    display: inline-flex;
+    border: 1px solid transparent;
+    position: absolute;
+    align-self: center;
+    top: 345px;
+}
+
+.circle-pagination {
+    display: inline-block;
+    margin: 0 3px;
+    height: 4px;
+    width: 4px;
+    border-radius: 50%;
+    border: none;
+    background-color: aliceblue;
+    transition: all 0.4s ease;
+}
+
+.appsDesktopEdges {
+    width: 1px;
+    height: 320px;
+    background-color: transparent;
+    position: absolute;
+    z-index: 10;
+    cursor: pointer;
+}
+.appsDesktopEdges:hover {
+    background-color: #ffffffe7;
+}
+.appsDesktopEdgesHover {
+    background-color: #ffffffe7;
+}
+#previousPage {
+    left: 0px;
+}
+#nextPage {
+    right: 0px;
+}

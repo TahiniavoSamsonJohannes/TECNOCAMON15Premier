@@ -1,0 +1,72 @@
+.notification-bar {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2px;
+    height: auto;
+    width: var(--phone-screen-width);
+    z-index: 15;
+}
+
+.time {
+    margin-left: 14px;
+    width: fit-content;
+    height: fit-content;
+    font-size: 8.5px;
+    font-family: sans-serif;
+    color: white;
+}
+
+.signal-battery{
+    margin-right: 14px;
+    width: 45%;
+    height: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+
+/* Battery */
+.signal-battery img:last-child {
+    width: auto;
+    height: 8.5px;
+}
+
+
+/* Signals SIM */
+.signal-SIM1, .signal-SIM2 {
+    display: flex;
+    align-items: end;
+    width: fit-content;
+    height: 8px;
+    margin-right: 1.5px;
+}
+
+.signal-SIM1 div, .signal-SIM2 div{
+    width: 1.5px;
+    border-radius: .8px;
+    margin-right: 1px;
+}
+
+.signal-SIM1 div:first-child, .signal-SIM2 div:first-child{
+    height: 25%;
+    background-color: white;
+}
+.signal-SIM1 div:nth-child(2), .signal-SIM2 div:nth-child(2){
+    height: 50%;
+    background-color: white;
+}
+.signal-SIM1 div:nth-child(3){
+    height: 75%;
+    background-color: white;
+}
+.signal-SIM2 div:nth-child(3){
+    height: 75%;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.signal-SIM1 div:last-child, .signal-SIM2 div:last-child{
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+}

@@ -1,0 +1,26 @@
+[
+    {
+        "nom": "Facebook",
+        "chemin": "/icons/Applications/F/Facebook.png"
+    },
+    {
+        "nom": "FM Radio",
+        "chemin": "/icons/Applications/F/FM Radio.png"
+    },
+    {
+        "nom": "Folder Note",
+        "chemin": "/icons/Applications/F/Folder Note.png"
+    },
+    {
+        "nom": "Formule Free",
+        "chemin": "/icons/Applications/F/Formule Free.png"
+    },
+    {
+        "nom": "Français",
+        "chemin": "/icons/Applications/F/Français.png"
+    },
+    {
+        "nom": "Fre-Eng Dictionnary",
+        "chemin": "/icons/Applications/F/Fre-Eng Dictionnary.png"
+    }
+]

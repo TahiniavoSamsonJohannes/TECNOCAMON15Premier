@@ -1,0 +1,18 @@
+[
+    {
+        "nom": "Galerie",
+        "chemin": "/icons/Applications/G/Galerie.png"
+    },
+    {
+        "nom": "Gestionnaire de fichiers",
+        "chemin": "/icons/Applications/G/Gestionnaire de fichiers.png"
+    },
+    {
+        "nom": "Gmail",
+        "chemin": "/icons/Applications/G/Gmail.png"
+    },
+    {
+        "nom": "Google",
+        "chemin": "/icons/Applications/G/Google.png"
+    }
+]

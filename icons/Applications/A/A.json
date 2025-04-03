@@ -1,0 +1,18 @@
+[
+    {
+        "nom": "Accélérateur",
+        "chemin": "/icons/Applications/A/Accélérateur.png"
+    },
+    {
+        "nom": "Agenda",
+        "chemin": "/icons/Applications/A/Agenda.png"
+    },
+    {
+        "nom": "Anglais",
+        "chemin": "/icons/Applications/A/Anglais.png"
+    },
+    {
+        "nom": "Appareil photo",
+        "chemin": "/icons/Applications/A/Appareil_photo.png"
+    }
+]

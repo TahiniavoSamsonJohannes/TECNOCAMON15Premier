@@ -1,0 +1,18 @@
+[
+    {
+        "nom": "E-media",
+        "chemin": "/icons/Applications/R/Raccourci E-media.png"
+    },
+    {
+        "nom": "Rakibolana Malagasy",
+        "chemin": "/icons/Applications/R/Rakibolana Malagasy.png"
+    },
+    {
+        "nom": "Rotation",
+        "chemin": "/icons/Applications/R/Rotation.png"
+    },
+    {
+        "nom": "Rubik's Cube",
+        "chemin": "/icons/Applications/R/Rubiks Cube.png"
+    }
+]

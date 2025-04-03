@@ -1,0 +1,55 @@
+.important-apps{
+    height: 12%;/* 
+    border: 2px dashed rgb(0, 255, 26); */
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.apps-img{
+    height: 32px;
+    width: 32px;
+    transition: all .2s ease;
+}
+.apps-img:hover{
+    transform: scale(1.05);
+}
+
+
+.applications{
+    position: relative;
+    height: 70%;
+    border: 2px dashed blue;
+    text-align: center;
+}
+
+#grid-app1{
+    position: absolute;
+    max-height: 100%;
+    padding-left: 15px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    transition: all .5s ease;
+    border: 2px dashed rgb(51, 255, 0);
+}
+#grid-app2{
+    position: absolute;
+    transform: rotateY(90deg);
+    max-height: 100%;
+    padding-left: 15px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    transition: all .5s ease;
+    border: 2px dashed rgb(51, 255, 0);
+}
+.grid-square{
+    position: relative;
+    width: 37px;
+    height: 37px;
+    margin: 6px 1px 22px;
+    display: inline-block;
+    text-align: center;
+    border: 1px solid whitesmoke;
+}

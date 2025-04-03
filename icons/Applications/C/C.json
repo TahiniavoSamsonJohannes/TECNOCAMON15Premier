@@ -1,0 +1,30 @@
+[
+    {
+        "nom": "Calculator",
+        "chemin": "/icons/Applications/C/Calculator.png"
+    },
+    {
+        "nom": "Calculatrice",
+        "chemin": "/icons/Applications/C/Calculatrice.png"
+    },
+    {
+        "nom": "CamScanner",
+        "chemin": "/icons/Applications/C/CamScanner.png"
+    },
+    {
+        "nom": "ChatGPT",
+        "chemin": "/icons/Applications/C/ChatGPT.png"
+    },
+    {
+        "nom": "Chrome",
+        "chemin": "/icons/Applications/C/Chrome.png"
+    },
+    {
+        "nom": "Contacts",
+        "chemin": "/icons/Applications/C/Contacts.png"
+    },
+    {
+        "nom": "Congélateur",
+        "chemin": "/icons/Applications/C/Congélateur.png"
+    }
+]

@@ -1,0 +1,30 @@
+[
+    {
+        "nom": "ChatGPT",
+        "chemin": "/icons/Applications/favorites_apps/ChatGPT.png"
+    },
+    {
+        "nom": "Facebook",
+        "chemin": "/icons/Applications/favorites_apps/Facebook.png"
+    },
+    {
+        "nom": "PicSay Pro",
+        "chemin": "/icons/Applications/favorites_apps/PicSay Pro.png"
+    },
+    {
+        "nom": "Play Store",
+        "chemin": "/icons/Applications/favorites_apps/Play Store.png"
+    },
+    {
+        "nom": "Téléphone",
+        "chemin": "/icons/Applications/favorites_apps/Téléphone.png"
+    },
+    {
+        "nom": "TubeMate",
+        "chemin": "/icons/Applications/favorites_apps/TubeMate.png"
+    },
+    {
+        "nom": "Xender",
+        "chemin": "/icons/Applications/favorites_apps/Xender.png"
+    }
+]

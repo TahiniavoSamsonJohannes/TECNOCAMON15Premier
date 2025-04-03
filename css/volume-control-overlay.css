@@ -1,0 +1,109 @@
+.volume-control-overlay{
+    position: absolute;
+    top: 20.5%;
+    right: 0;
+    width: fit-content;
+    transform: translateX(110%);
+    transition: all .3s ease;
+    z-index: 50;
+}
+.show{
+    transform: translateX(-10%);
+}
+
+.ring-state{
+    width: 33px;
+    height: 33px;
+    margin: 0 auto 2.5px;
+    border-radius: 50%;
+    border: 2px solid var(--volume-control-overlay-background);
+    background-color: var(--volume-control-overlay-background);
+    box-shadow: 0 1px 1.5px rgba(33, 33, 33, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .8s ease;
+    cursor: pointer;
+}
+.ring-state:active{
+    background-color: rgba(39, 39, 39, 0.3);
+}
+
+.medias-volume{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 36px;
+    border-radius: 18px;
+    background-color: var(--volume-control-overlay-background);
+    box-shadow: 0 1px 1.5px rgba(33, 33, 33, 0.1);
+}
+
+.volume-container-measure{
+    position: relative;
+    width: 28px;
+    height: 135px;
+    border-radius: 14px;
+    background-color: rgba(0, 60, 255, 0.2);
+    margin: 4px 0 4px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.volume-medias-icon{
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    bottom: 20%;
+    z-index: 1;
+    transition: all .5s ease;
+    cursor: pointer;
+}
+.volume-medias-icon:active{
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.volume-level{
+    position: absolute;
+    bottom: 0;
+    width: 28px;
+    height: 30%;
+    max-height: 100%;
+    min-height: 0%;
+    transition: all .1s ease-out;
+    background-color: rgb(0, 94, 255);
+}
+.more-volume-settings{
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    margin-bottom: 4px;
+    background-color: rgba(0, 60, 255, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+}
+
+.more-volume-settings .more{
+    width: 2.5px;
+    height: 2.5px;
+    border-radius: 50%;
+    background-color: rgb(0, 94, 255);
+    margin: 0 1px;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+.more-volume-settings:active{
+    background-color: rgba(0, 60, 255, 0.5);
+}
+
+.ring-state-icon{
+    width: 14px;
+    height: auto;
+}

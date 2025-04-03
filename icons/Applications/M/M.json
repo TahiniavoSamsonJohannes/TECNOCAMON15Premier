@@ -1,0 +1,42 @@
+[
+    {
+        "nom": "Magnétophone",
+        "chemin": "/icons/Applications/M/Magnétophone.png"
+    },
+    {
+        "nom": "MAPS.ME",
+        "chemin": "/icons/Applications/M/MAPS.ME.png"
+    },
+    {
+        "nom": "Maps",
+        "chemin": "/icons/Applications/M/Maps.png"
+    },
+    {
+        "nom": "Meet",
+        "chemin": "/icons/Applications/M/Meet.png"
+    },
+    {
+        "nom": "Messages",
+        "chemin": "/icons/Applications/M/Messages.png"
+    },
+    {
+        "nom": "Messenger",
+        "chemin": "/icons/Applications/M/Messenger.png"
+    },
+    {
+        "nom": "Météo",
+        "chemin": "/icons/Applications/M/Météo.png"
+    },
+    {
+        "nom": "Minecraft",
+        "chemin": "/icons/Applications/M/Minecraft.png"
+    },
+    {
+        "nom": "MVola",
+        "chemin": "/icons/Applications/M/MVola.png"
+    },
+    {
+        "nom": "My Airtel",
+        "chemin": "/icons/Applications/M/My Airtel.png"
+    }
+]
